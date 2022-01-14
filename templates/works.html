@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>My works</title>
+      <link rel="stylesheet" href="{% static '/css/works.css' %}">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="container">
+         <div class="card">
+            <div class="img">
+               <img src="{% static '/pic/work/work1.jpg' %}">
+            </div>
+            <div class="top-text">
+               <div class="name">
+                  Server Find
+               </div>
+               <p>
+                 Language: Python
+               </p>
+            </div>
+            <div class="bottom-text">
+               <div class="text">
+                  You can find any web server deatils easily with this scripts.
+                  This shorts script is so powerfull.The server is fully made with oython.
+                  Check this out.
+               </div>
+               <div class="btn">
+                  <a href="https://github.com/himaloyHimu35/server_find" target="_blank">Github Link</a>
+               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="img">
+               <img src="{% static '/pic/work/work2.jpg' %}">
+            </div>
+            <div class="top-text">
+               <div class="name">
+                  Attendance System(AI)
+               </div>
+               <p>
+                  Language: Python
+               </p>
+            </div>
+            <div class="bottom-text">
+               <div class="text">
+                  The whole project is all about smart attendance system using python along with artificial intelligence.
+                  you can use this project as free.Now a days traditional attendance system is not recommended.
+                  That's why We make this Project. Check this out.
+               </div>
+               <div class="btn">
+                  <a href="#" target="_blank">Github Link</a>
+               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="img">
+               <img src="{% static '/pic/work/work3.jpg' %}">
+            </div>
+            <div class="top-text">
+               <div class="name">
+                  RMS
+               </div>
+               <p>
+                  Language: C#
+               </p>
+            </div>
+            <div class="bottom-text">
+               <div class="text">
+                  Restaurant management software, when done the right way, is a sure-fire way to ensure a restaurant's success.
+                  we made a user friendly UI for our manager.Check this out. 
+               </div>
+               <div class="btn">
+                  <a href="https://github.com/himaloyHimu35/restaurant-management-system" target="_blank">Github Link</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </body>
+</html>
+{% endblock %}

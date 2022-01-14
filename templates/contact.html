@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static '/css/contact.css' %}">
+</head>
+  <title>Contact With Me</title>
+</head>
+<body>
+  
+  <section id="contact">
+    <div class="contact-box">
+      <div class="contact-links">
+        <h2>CONTACT</h2>
+        <div class="links">
+          <div class="link" style="  background-image: linear-gradient(to right top, #1c1c1c, #252527, #2e2e32, #36383d, #3f4249, #42474f, #444c54, #46515a, #435259, #415257, #3f5355, #3f5352);
+          width: 400px;
+          border: 3px solid rgb(26, 27, 26);
+          padding: 50px;
+          margin: 20px; color: white;">
+            <p> Whatsapp: 01998562213</p>
+            <p>Email: iahmed682@gmail.com</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form>
+          <div class="form-item">
+            <input type="text" name="sender" required>
+            <label>Name:</label>
+          </div>
+          <div class="form-item">
+            <input type="text" name="email" required>
+            <label>Email:</label>
+          </div>
+          <div class="form-item">
+            <textarea class="" name="message" required></textarea>
+            <label>Message:</label>
+          </div>
+          <button class="submit-btn">Send</button>  
+        </form>
+      </div>
+    </div>
+  </section>
+  </div>
+</body>
+</html>
+
+{%endblock%}

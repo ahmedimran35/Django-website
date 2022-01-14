@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>All of My Services</title>
+        <link rel="stylesheet" href="{% static '/css/services.css' %}">
+    </head>
+    <body>
+        <div class="cards">
+        <div class="card">
+            <div class="head">
+                <img class="img" src="{% static '/pic/services/web.jpg' %}" alt="image">
+            <div class="content">
+                <h5>10 January 2022</h5>
+                <h3>Web Design</h3>
+                <p>As a web designer I, works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used. Layout refers to how information 
+                    is structured and categorized. I always try to make a unique website.  </p>
+                <a href="/contact" class="button">Buy This Service</a>
+            </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="head">
+                <img class="img" src="{% static '/pic/services/web_dev.jpg' %}" alt="image">
+            <div class="content">
+                <h5>10 January 2022</h5>
+                <h3>Web Development</h3>
+                <p>I have a huge experience about web development. I made lot web apps in past with django as well 
+                    as php and javascripts.you can freely trust on my work as a web developer. </p>
+                <a href="/contact" class="button">Buy This Service</a>
+              </div>
+            </div>
+        </div>
+        </div>
+        <div class="card">
+            <div class="head">
+                <img class="img" src="{% static '/pic/services/web.jpg' %}" alt="image">
+            <div class="content">
+                <h5>10 January 2022</h5>
+                <h3>Apps Development</h3>
+                <p>As a apps developer r I, works on the appearance, layout, and, in some cases, content of teh apps. Appearance, for instance, relates to the colors, font, and images used. 
+                    Layout refers to how information is structured and categorized. I always try to make a unique apps.  </p>
+                <a href="/contact" class="button">Buy This Service</a>
+            </div>
+        
+    </body>
+</html>
+{% endblock %}

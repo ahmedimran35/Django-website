@@ -1,0 +1,102 @@
+{% load static %}
+<div>
+    <nav>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+          <li class="nav-item">
+            <a href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/educations">Educations</a>
+          </li>
+          <li class="nav-item">
+            <a href="/services">services</a>
+          </li>
+          <li class="nav-item">
+            <a href="/works">works</a>
+          </li>
+          <li class="nav-item">
+           
+            <a href="/contact"><button class=btn-primary>Contact</button></a>
+          </li>
+        </ul>
+      </nav>
+      <style>
+          :root {
+/*   color variables */
+--clr-primary: #6aeeb5;
+--clr-primary-hover: #29e6a7;
+--clr-primary-dark: #039d69;
+--clr-gray100: #f0f7f8;
+--clr-gray200: #cfd8dc;
+
+/*   border radius */
+--radius: 0.2rem;
+}
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+body {
+font-family: Montserrat, sans-serif;
+background: var(--clr-gray100);
+}
+
+.nav-list {
+background: white;
+box-shadow: 0px 0px 10px var(--clr-gray200);
+padding: 1rem 0;
+border-radius: var(--radius);
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+.nav-item {
+list-style: none;
+margin-right: 2rem;
+}
+
+.nav-item a {
+text-decoration: none;
+color: black;
+transition: all 200ms ease-in;
+}
+
+.nav-item a:hover {
+color: var(--clr-primary-dark);
+}
+
+.nav-item:first-child {
+margin-right: auto;
+margin-left: 2rem;
+}
+
+.btn-primary {
+font-family: Montserrat, sans-serif;
+font-size: 1rem;
+background: var(--clr-primary);
+border: none;
+outline: none;
+border-radius: var(--radius);
+padding: 0.5rem 1rem;
+cursor: pointer;
+transition: all 200ms ease-in;
+}
+
+.btn-primary:hover {
+background: var(--clr-primary-hover);
+}
+
+      </style>
+</div>
+<body>
+    {% block content %}
+
+    {% endblock %}
+</body>

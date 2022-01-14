@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to My Portfolio</title>
+    <link rel="stylesheet" href="{% static '/css/index.css' %}">
+</head>
+<body>
+  <div class="skill-bars">
+    <div class="bar">
+      <div class="info">
+        <span>HTML</span>
+      </div>
+      <div class="progress-line html">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>CSS</span>
+      </div>
+      <div class="progress-line css">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>jQuery</span>
+      </div>
+      <div class="progress-line jquery">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>Python</span>
+      </div>
+      <div class="progress-line python">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>MySQL</span>
+      </div>
+      <div class="progress-line mysql">
+        <span></span>
+      </div>
+    </div>
+    <a href="/contact" style="display: table;
+    margin: 0 auto;"><button class=btn-primary>Hire Me</button></a>
+  </div>
+  
+</body>
+</html>
+{% endblock  %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About Me | MArium Ahsan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static '/css/about.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
+  <body>
+    
+    <div class = "about-wrapper">
+      <div class = "about-left">
+        <div class = "about-left-content">
+            
+           
+          <div>
+            <div class = "shadow">
+              <div class = "about-img">
+                <img src = "{% static '/pic/pic.jpg' %}" alt = "about image">
+              </div>
+            </div>
+
+            <h2>Marium Ahsan</h2>
+            <h3>Web developer</h3>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class = "about-right">
+        <h1>Hello<span>!</span></h1>
+        <h2>Here's who I am & what I do</h2>
+        <div class = "about-btns">
+          <a href="#" ><button class=btn-primary>Resume/Cv</button></a> &nbsp;&nbsp;&nbsp;
+         
+          <a href="https://github.com/himaloyHimu35" target="_blank"><button class=btn-primary> Github</button></a>
+        </div>
+
+        <div class = "about-para">
+          <p> <b>Welcome! </b> <br>
+             Are you tired of trying to build your Complete Wordpress website or portfolio website
+             or e-commerce or any other website because of all the nitty-gritty details that you have to learn? Well, Don't be frustrated anymore! 
+             I'm here to help you with your perfect site. </p>
+          <p> <b>Why me?</b> <br>
+            Well, I've been creating websites for just over 1 years now and I have over 10 sites in my portfolio! If you need professionalism and expertise, as well as someone who 
+            can communicate with you effectively and in an easy-to-understand manner, I'm the one for you. </p>
+        </div>
+        <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.learningrobo.com/">Imran Ahmed</a></div>
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock %}
