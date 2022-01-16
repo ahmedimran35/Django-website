@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-79-qk2l17-qo^j*hxrxf3u#p1eqb$1htm)*1@802q_z3v$x%3n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["marium.herokuapp.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
